@@ -1,7 +1,7 @@
 package com.排序.冒泡排序;
 
 public class BubbleSort {
-    public static int[] bubbleSort(int[] array){
+    public static void bubbleSort(int[] array){
         for(int i = 0;i < array.length;i ++){
             boolean isExchanged = false;
             for(int j = 0;j < array.length-i-1;j ++){
@@ -16,7 +16,6 @@ public class BubbleSort {
                 break;
             }
         }
-        return array;
     }
 
     /**

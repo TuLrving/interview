@@ -2,7 +2,7 @@ package com.排序.选择排序;
 
 public class SelectionSort {
     //每次从无序区选出最小的元素放到无序区第一位
-    public static int[] selectionSort(int[] array){
+    public static void selectionSort(int[] array){
         int minNum = 0;
         int minIndex = 0;
         for(int i = 0;i < array.length;i ++){
@@ -17,7 +17,6 @@ public class SelectionSort {
             array[i] = minNum;
             array[minIndex] = num;
         }
-        return array;
     }
 
     /**
